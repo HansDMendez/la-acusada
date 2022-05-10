@@ -82,7 +82,8 @@ hr {
     align-items: center;
     justify-content: flex-end;
 }
-.container2 {
+
+.container2{
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
@@ -90,26 +91,28 @@ hr {
     padding:100px 0;
     height: auto;
 }
-.Dibujo {
+.testimony_container {
     display: flex;
-     justify-content: space-between;
-     align-items: center;
-     flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
 }
-.card {
-    width: 45%;
-    height: 700px;
+.testimony_card {
+    width: 35%;
+    height: 545px;
+    background: linear-gradient(180deg, var(--black2) 0%, var(--black1) 100%);
     border-radius: 10px;
     position: relative;
     margin-bottom: 30px;
 }
-.Ary {
+.testimony_img {
     width: 100%;
     height: 100%;
     border-radius: inherit;
     object-fit: cover;
     object-position: center top;
 }
+
 .sospecha {
     width: 100%;
     margin-bottom: 20px;
@@ -253,6 +256,14 @@ hr {
     text-align: center;
     padding-bottom: 20px;
 }
+@media (max-width:900px) {
+    .testimony_container{
+        justify-content: space-evenly;
+    }
+    .testimony_card{
+        width: 45%;
+    }
+}
 
 @media (max-width: 700px) {
     .menu-btn {
@@ -270,6 +281,11 @@ hr {
         transform: translatex(-400px);
         transition: transform .5s ease-in-out;
     }
+
+    .testimony_card{
+        width: 65%;
+    }
+
     .nav-main ul.nav-menu.show {
         transform: translatex(-20px);
     }
@@ -292,11 +308,17 @@ hr {
     }
 }
 @media (max-width: 500px) {
-    .Dibujo{
-        justify-content: space-evenly;
+    .container2 {
+        width: 100%;
     }
+    .testimony_card{
+        width: 100%;
+        height: 100%;
+    }
+
+
     .card{
-        width: 95%;
+        width: 100%;
     }
     .news-cards {
         grid-template-columns: 1fr;
