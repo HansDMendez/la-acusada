@@ -24,12 +24,12 @@ a:hover {
 header {
     width: 100%;
     float: left;
-    background: #ffffff;
-    background: -moz-linear-gradient(top,  #ffffff 0%, #eaeaea 47%, #d6d4d4 100%);
-    background: -webkit-linear-gradient(top,  #ffffff 0%,#eaeaea 47%,#d6d4d4 100%);
-    background: linear-gradient(to bottom,  #ffffff 0%,#eaeaea 47%,#d6d4d4 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#d6d4d4',GradientType=0 );
-        box-shadow: 0px 3px 5px #000;
+        background: #ffffff;
+        background: -moz-linear-gradient(top,  #ffffff 0%, #eaeaea 47%, #d6d4d4 100%);
+        background: -webkit-linear-gradient(top,  #ffffff 0%,#eaeaea 47%,#d6d4d4 100%);
+        background: linear-gradient(to bottom,  #ffffff 0%,#eaeaea 47%,#d6d4d4 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#d6d4d4',GradientType=0 );
+    box-shadow: 0px 3px 5px #000;
         -moz-box-shadow: 0px 3px 5px #000;
         -webkit-box-shadow: 0px 3px 5px #000;
 }
@@ -163,6 +163,9 @@ header #subheader nav ul li a:hover {
     width: 700px;
     float: left;
 }
+.gumballt {
+    width: 950px;
+}
 #contenido article {
     float: left;
     margin-bottom: 20px;
@@ -191,9 +194,6 @@ header #subheader nav ul li a:hover {
     color: #B01E1E;
     font-size: 17px;
     text-align: justify;
-}
-.gumball {
-    text-decoration: none;
 }
 
 /*-- Sidebar --*/
@@ -228,11 +228,6 @@ aside .widget > h3 {
     text-align: center;
     font-weight: bold;
     margin-bottom: 10px;
-}
-aside .widget a {color: #ccc;}
-aside .widget ul li {
-    margin-bottom: 5px;
-    font-size: 18px;
 }
 aside .widget p {
     color: #fff;
@@ -325,4 +320,279 @@ footer #redes-s > div:hover {
     font-size: 18px;
     color: #fff;
     font-family: Arial, Helvetica, sans-serif;
+}
+@media (max-width:800px) {
+    #wrap {
+        width: 0;
+        margin: 0;
+        clear: both;
+    }
+    header {
+        width: 100%;
+    }
+
+
+    #subheader {
+        width: 100vh;
+    }
+    #logotipo {
+        width: 20vh;
+    }
+    #logotipo a {
+        font-size: 45px
+    }
+    header #subheader nav {
+        width: 360px;
+        padding: 20px 0px;
+
+    }
+    header #subheader nav ul li a {
+        font-size: 25px;
+    }
+
+
+    #main {
+        width: 100vh;
+    }
+    .slider {
+        width: calc(800px - 40px);
+    }
+    .slider ul {
+        width: 400%;
+    }
+    .slider ul li img {
+        width: 100%;
+    }
+
+
+    #bienvenido {
+        width: calc(800px - 40px);
+        height: 240px;
+        border-radius: 20px;
+    }
+    #bienvenido article h2 {
+        font-size: 35px;
+    }
+    #bienvenido article {
+        line-height: 30px;
+    }
+    #bienvenido article .letras {
+        font-size: 20px;
+    }
+
+
+    #contenido {
+        width: 400px;
+    }
+    #contenido article {
+        padding: 20px;
+    }
+    #contenido article .titulo {
+        font-size: 40px;
+    }
+    #contenido article .fecha {
+        font-size: 35px;
+    }
+    #contenido article .thumb {
+        width: 250px;
+    }
+    #contenido article > p {
+        font-size: 25px;
+    }
+    #contenido article > p a {
+        font-size: 25px;
+    }
+    .gumballt {
+        width: 100%;
+    }
+
+    
+    aside {
+        width: 400px;
+        margin: 0 0 20px;
+    }
+    aside .widget {
+        line-height: 25px;
+    }
+    aside .widget > h3 {
+        width: 60px;
+        font-size: 30px;
+        padding: 20px 0px;
+    }
+    aside .widget p {
+        color: #fff;
+        margin-bottom: 5px;
+        font-size: 20px;
+    }
+    aside .widget img {
+        width: 250px;
+        margin: auto;
+        display: block;
+        border-radius: 10px;
+    }
+
+
+    footer {
+        width: 500px;
+    }
+    footer section {
+        width: 40vh;
+    }
+    footer #acerca-de {
+        font-size: 20px;
+        text-align: justify;
+        line-height: 25px;
+    }
+    footer #acerca-de h3 {
+        font-size: 26px;
+    }
+    footer #redes-s > div {
+        width: 220px;
+        height: 60px;
+        margin-bottom: 15px;
+    }
+
+    #copyright {
+        width: 400px;
+    }
+    #copyright p {
+        font-size: 26px;
+    }
+}
+
+@media (max-width:320px){
+    #subheader {
+        width: 100%;
+    }
+    #logotipo {
+        width: 200px;
+        text-align: center;
+    }
+    #logotipo a {
+        font-size: 40px
+    }
+
+    header #subheader nav {
+        width: 360px;
+        padding: 1px 0px;
+    }
+    header #subheader nav ul li {
+        display: flex;
+        align-items: center;
+        margin: 1px;
+    }
+    header #subheader nav ul li a {
+        font-size: 20px;
+    }
+
+
+    #main {
+        width: 320px;
+    }
+    .slider {
+        width: calc(320px - 40px);
+        height: 260px;
+    }
+    .slider ul li img {
+        width: 100%;
+    }
+    .slider ul {
+        width: 400%;
+    }
+
+
+    #bienvenido {
+        width: calc(320px - 40px);
+        height: 300px;
+        border-radius: 20px;
+    }
+    #bienvenido article h2 {
+        font-size: 35px;
+    }
+    #bienvenido article {
+        line-height: 30px;
+    }
+    #bienvenido article .letras {
+        font-size: 20px;
+    }
+
+
+    #contenido {
+        width: 320px;
+    }
+    #contenido article {
+        padding: 0;
+    }
+    #contenido article .titulo {
+        font-size: 27px;
+    }
+    #contenido article .fecha {
+        font-size: 20px;
+    }
+    #contenido article .thumb {
+        width: 300px;
+    }
+    #contenido article > p {
+        font-size: 22px;
+        width: 300px;
+    }
+    #contenido article > p a {
+        font-size: 22px;
+    }
+    .gumballt {
+        width: 100%;
+    }
+
+
+    aside {
+        width: 100px;
+        margin: 0 0 20px;
+    }
+    aside .widget {
+        line-height: 25px;
+    }
+    aside .widget > h3 {
+        width: 60px;
+        font-size: 30px;
+        padding: 20px 0px;
+    }
+    aside .widget p {
+        color: #fff;
+        margin-bottom: 5px;
+        font-size: 20px;
+    }
+    aside .widget img {
+        width: 250px;
+        margin: auto;
+        display: block;
+        border-radius: 10px;
+    }
+
+
+    footer {
+        width: 100px;
+    }
+    footer section {
+        width: 40vh;
+    }
+    footer #acerca-de {
+        font-size: 20px;
+        text-align: justify;
+        line-height: 25px;
+    }
+    footer #acerca-de h3 {
+        font-size: 26px;
+    }
+    footer #redes-s > div {
+        width: 220px;
+        height: 60px;
+        margin-bottom: 15px;
+    }
+
+    #copyright {
+        width: 100px;
+    }
+    #copyright p {
+        font-size: 26px;
+    }
 }
